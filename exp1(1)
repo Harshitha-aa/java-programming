@@ -1,0 +1,25 @@
+public class demo1 {
+    public static void main(String[] args){
+        int a=6;
+        boolean temp=false;
+        if(a==0 || a==1)
+        {
+            temp=true;
+        }
+        for(int i=2;i<=a/2;i++){
+            if(a%i==0)
+            {
+                temp=true;
+                break;
+            }
+        }
+        if(!temp)
+        {
+            System.out.println("the number is prime");
+        }
+        else{
+            System.out.println("the number is not prime");
+        }
+
+    }
+}
